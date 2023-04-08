@@ -1,11 +1,11 @@
 import React from "react";
 
-function GetTime() {
-  const time = new Date();
-  let hour = time.getHours();
-  let min = time.getMinutes();
-  let sec = time.getSeconds();
+const time = new Date();
+let hour = time.getHours();
+let min = time.getMinutes();
+let sec = time.getSeconds();
 
+function GetTime() {
   if (min < 10) {
     min = "0" + min;
   }
@@ -20,3 +20,4 @@ function GetTime() {
   return Time;
 }
 export default GetTime;
+export { hour };
